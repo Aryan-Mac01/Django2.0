@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def all_horcrux(request):
     return render(request, 'horcrux/all_items.html')
+
+def about_them(request):
+    return render(request, 'horcrux/about.html')

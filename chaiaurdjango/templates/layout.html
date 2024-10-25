@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% comment %} whole area gets replace by the title of the page {% endcomment %}
+        {% block title  %}
+            Default Title  
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <nav>This is my navbar</nav>
+    {% comment %} same thing whole block gets replaced by the content {% endcomment %}
+    {% block content %}{% endblock %}
+
+</body>
+</html>

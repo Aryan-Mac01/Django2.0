@@ -7,3 +7,6 @@ def all_horcrux(request):
 
 def about_them(request):
     return render(request, 'horcrux/about.html')
+
+def worst(request):
+    return render(request, 'horcrux/worst.html')

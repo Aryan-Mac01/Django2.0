@@ -8,5 +8,5 @@ urlpatterns = [
     path('worst/', views.worst, name="worst"),
     #localhost:3000/horcrux/first
     #path('first/', views.first, name="first"),
-    
+    path('<int:chai_id>/', views.chai_detail, name="chai_detail"),
 ]

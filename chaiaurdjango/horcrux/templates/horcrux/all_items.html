@@ -7,11 +7,20 @@
 {% block content %}
     <h1>All the 7 Horcruxes</h1>
 
+    <div class="grid grid-cols-3 gap-4 m-4">
+
     {% for chai in chais  %}
-    <div class="chai-item">
-        <img src="{{chai.image.url}}" alt="">
+    <div class="bg-gray-500 p-5 rounded">
+        <img class="rounded shadow-lg" src="{{chai.image.url}}" alt="">
+        <h3 class="text-xl font-bold">{{chai.name}}</h3>
+        <a href='="{% url 'chai_detail' chai.id %}'>
+            <button type="button" class="bg-orange-600 hover:bg-orange-700 text-white">
+                {{chai.type}} - {{chai.id}}
+            </button>
+        </a>
     </div>
     {% endfor %}
+    </div>
 {% endblock %}
 
 

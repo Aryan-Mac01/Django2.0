@@ -6,4 +6,12 @@
 
 {% block content %}
     <h1>All the 7 Horcruxes</h1>
+
+    {% for chai in chais  %}
+    <div class="chai-item">
+        <img src="{{chai.image.url}}" alt="">
+    </div>
+    {% endfor %}
 {% endblock %}
+
+
